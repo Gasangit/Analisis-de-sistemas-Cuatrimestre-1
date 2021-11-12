@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="GASAN" created="2021-10-07" changedby="GASAN" changed="2021-10-07" origin="Structorizer 3.32" text="&#34;Ej3_largo&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ingresar pais//&#34;&#34;Por favor indique&#34;,&#34;cual es su país: &#34;,&#34;ARGENTINA&#34;,&#34;URUGUAY&#34;,&#34;CHILE&#34;,&#34;BRASIL&#34;,&#34;PERÚ&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;ingresar sexo//&#34;&#34;Por favor indique&#34;,&#34;si es HOMBRE o MUJER&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;ingresar talle//&#34;&#34;Por favor indique&#34;,&#34;su TALLE: S - M - L&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if sexo.equalsIgnoreCase(&#34;&#34;hombre&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<alternative text="&#34;if pais.equalsIgnoreCase(&#34;&#34;argentina&#34;&#34;)||&#34;,&#34;   pais.equalsIgnoreCase(&#34;&#34;uruguay&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;s&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle S en &#34;,&#34;ARGENTINA/URUGUAY &#34;,&#34;es $560&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;m&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle M en &#34;,&#34;ARGENTINA/URUGUAY &#34;,&#34;es 575&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE&#34;,&#34;talle L en &#34;,&#34;ARGENTINA/URUGUAY &#34;,&#34;es $590&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if pais.equalsIgnoreCase(&#34;&#34;chile&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;s&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle S en &#34;,&#34;CHILE &#34;,&#34;es $500&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;m&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+											<qTrue>
+												<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle M en &#34;,&#34;CHILE&#34;,&#34;es $525&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qTrue>
+											<qFalse>
+												<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle L en &#34;,&#34;CHILE&#34;,&#34;es $530&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qFalse>
+										</alternative>
+									</qFalse>
+								</alternative>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;s&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle S en &#34;,&#34;BRASIL/PERÚ &#34;,&#34;es $520&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;m&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+											<qTrue>
+												<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle M en &#34;,&#34;BRASIL/PERÚ &#34;,&#34;es $545&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qTrue>
+											<qFalse>
+												<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para un HOMBRE &#34;,&#34;talle L en &#34;,&#34;BRASIL/PERÚ &#34;,&#34;es $575&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qFalse>
+										</alternative>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;if pais.equalsIgnoreCase(&#34;&#34;argentina&#34;&#34;)||&#34;,&#34;   pais.equalsIgnoreCase(&#34;&#34;uruguay&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;s&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para una MUJER &#34;,&#34;talle S en &#34;,&#34;ARGENTINA/URUGUAY &#34;,&#34;es 450&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;m&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para una MUJER &#34;,&#34;talle M en &#34;,&#34;ARGENTINA/URUGUAY &#34;,&#34;es 500&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para una MUJER &#34;,&#34;talle L en &#34;,&#34;ARGENTINA/URUGUAY &#34;,&#34;es 520&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if pais.equalsIgnoreCase(&#34;&#34;chile&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;s&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para una MUJER &#34;,&#34;talle S en &#34;,&#34;CHILE &#34;,&#34;es $410&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;m&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+											<qTrue>
+												<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para una MUJER &#34;,&#34;talle M en &#34;,&#34;CHILE &#34;,&#34;es $460&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qTrue>
+											<qFalse>
+												<instruction text="&#34;mostrar &#34;&#34;El valor &#34;,&#34;para una MUJER &#34;,&#34;talle L en &#34;,&#34;CHILE &#34;,&#34;es $475&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qFalse>
+										</alternative>
+									</qFalse>
+								</alternative>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if talle.equalsIgnoreCase(&#34;&#34;s&#34;&#34;)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue color="ffffff">
+									</qTrue>
+									<qFalse color="ffffff">
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

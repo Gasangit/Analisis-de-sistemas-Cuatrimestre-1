@@ -1,0 +1,16 @@
+
+import javax.swing.*;
+
+class Ej1_parcial_extra {
+
+	public static void main(String[] args) {
+		int n_signo;
+		
+		n_signo = Integer.parseInt(JOptionPane.showInputDialog("Por favor ingrese el signo a" + 
+										   "\nconsultar mediante el >>NÚMERO<< en el listado" +
+						   "\n1-ARIES\n2-TAURO\n3-GÉMINIS\n4-CÁNCER\n5-LEO\n6-VIRGO\n7-LIBRA" +
+						  "\n8-ESCORPIO\n9-SAGITARIO\n10-CAPRICORNIO\n11-ACUARIO\n12-PISCIS"));
+
+	}
+
+}

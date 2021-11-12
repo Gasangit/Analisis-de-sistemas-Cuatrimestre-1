@@ -1,0 +1,20 @@
+package ej2;
+
+import javax.swing.JOptionPane;
+
+class Ej2 {
+
+	public static void main(String[] args) {
+		double a,b,c,d,s,p;
+		
+		a=Double.parseDouble(JOptionPane.showInputDialog("Ingrese número"));
+		b=Double.parseDouble(JOptionPane.showInputDialog("Ingrese número"));
+		c=Double.parseDouble(JOptionPane.showInputDialog("Ingrese número"));
+		d=Double.parseDouble(JOptionPane.showInputDialog("Ingrese número"));
+		
+		s=a+b+c+d;
+		p=s/4;
+		JOptionPane.showMessageDialog(null, "La suma es: "+ s + "el promedio es: " + p);
+	}
+
+}

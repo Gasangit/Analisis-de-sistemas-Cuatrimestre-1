@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-02" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="GASAN" created="2021-10-17" changedby="GASAN" changed="2021-10-17" origin="Structorizer 3.32-02" text="&#34;ej2_parcial_extra&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ingresar cumple//&#34;&#34;Ingrese su año de nacimiento&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if cumple&#60;1934 || cumple&#62;2005&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Debe ingresar un año&#34;,&#34;entre 1934 y 2005 usted&#34;,&#34;ingreso &#34;&#34; + cumple&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;if &#34;,&#34;cumple==1934||cumple==1946||&#34;,&#34;cumple==1958||cumple==1970||&#34;,&#34;cumple==1982||cumple==1994&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es PERRO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if &#34;,&#34;cumple==1935||cumple==1947||&#34;,&#34;cumple==1959||cumple==1971||&#34;,&#34;cumple==1983||cumple==1995&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es CHANCHO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if &#34;,&#34;cumple==1936||cumple==1948||&#34;,&#34;cumple==1960||cumple==1972||&#34;,&#34;cumple==1984||cumple==1996&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es RATA&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<alternative text="&#34;if &#34;,&#34;cumple==1937||cumple==1949||&#34;,&#34;cumple==1961||cumple==1973||&#34;,&#34;cumple==1985||cumple==1997&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+											<qTrue>
+												<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es BUEY&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qTrue>
+											<qFalse>
+												<alternative text="&#34;if &#34;,&#34;cumple==1938||cumple==1950||&#34;,&#34;cumple==1962||cumple==1974||&#34;,&#34;cumple==1986||cumple==1998&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+													<qTrue>
+														<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es TIGRE&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+													</qTrue>
+													<qFalse>
+														<alternative text="&#34;if &#34;,&#34;cumple==1939||cumple==1951||&#34;,&#34;cumple==1963||cumple==1975||&#34;,&#34;cumple==1987||cumple==1999&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+															<qTrue>
+																<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es CONEJO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+															</qTrue>
+															<qFalse>
+																<alternative text="&#34;if &#34;,&#34;cumple==1940||cumple==1952||&#34;,&#34;cumple==1964||cumple==1976||&#34;,&#34;cumple==1988||cumple==2000&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																	<qTrue>
+																		<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es DRAGÓN&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																	</qTrue>
+																	<qFalse>
+																		<alternative text="&#34;if &#34;,&#34;cumple==1941||cumple==1953||&#34;,&#34;cumple==1965||cumple==1977||&#34;,&#34;cumple==1989||cumple==2001&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																			<qTrue>
+																				<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es SERPIENTE&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																			</qTrue>
+																			<qFalse>
+																				<alternative text="&#34;if &#34;,&#34;cumple==1942||cumple==1954||&#34;,&#34;cumple==1966||cumple==1978||&#34;,&#34;cumple==1990||cumple==2002&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																					<qTrue>
+																						<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es CABALLO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																					</qTrue>
+																					<qFalse>
+																						<alternative text="&#34;if &#34;,&#34;cumple==1943||cumple==1955||&#34;,&#34;cumple==1967||cumple==1979||&#34;,&#34;cumple==1991||cumple==2003&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																							<qTrue>
+																								<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es OVEJA&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																							</qTrue>
+																							<qFalse>
+																								<alternative text="&#34;if &#34;,&#34;cumple==1944||cumple==1956||&#34;,&#34;cumple==1968||cumple==1980||&#34;,&#34;cumple==1992||cumple==2004&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																									<qTrue>
+																										<instruction text="&#34;mostrar&#34;,&#34;&#34;&#34;Su signo en el &#34;,&#34;horóscopo chino&#34;,&#34;es MONO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																									</qTrue>
+																									<qFalse>
+																										<instruction text="&#34;mostrar&#34;,&#34;&#34;&#34;Su signo en el&#34;,&#34;horóscopo chino&#34;,&#34;es GALLO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																									</qFalse>
+																								</alternative>
+																							</qFalse>
+																						</alternative>
+																					</qFalse>
+																				</alternative>
+																			</qFalse>
+																		</alternative>
+																	</qFalse>
+																</alternative>
+															</qFalse>
+														</alternative>
+													</qFalse>
+												</alternative>
+											</qFalse>
+										</alternative>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

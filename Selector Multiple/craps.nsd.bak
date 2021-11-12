@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-03" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="GASAN" created="2021-10-31" changedby="GASAN" changed="2021-10-31" origin="Structorizer 3.32-03" text="&#34;craps&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;mostrar &#34;&#34;Tendrá 3 dados para jugar:&#34;,&#34;- Gana el triple de la apuesta si suma 3 o 18.&#34;,&#34;- Pierde todo su dinero si obtiene 6, 9 o 12.&#34;,&#34;- Si no suma ninguna de esas cifras tiene segundo &#34;,&#34;  intento.&#34;,&#34;- En la segunda vuelta: &#34;,&#34;     -Si los 3 dados son iguales gana el doble de la &#34;,&#34;     apuesta.&#34;,&#34;     -Si alguno de los dados es 1 cobra la apuesta +&#34;,&#34;      $10&#34;,&#34;     -Si obtiene 2 dados iguales recupera la apuesta&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;apuesta = math.random()100+1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;Usted apostará $&#34;&#34; + apuesta&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;dado1 = math.random()*6+1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;Su primer dado es &#34;&#34; + dado1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;dado2 = math.random()*6+1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;Su segundo dado es &#34;&#34; + dado2&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;dado3 = math.random()*6+1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;Su tercer dado es &#34;&#34; + dado3&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;suma = dado1 + dado2 + dado3&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if suma == 3 &#34;,&#34;|| suma == 18&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;gana = resultado * 3&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;mostrar &#34;&#34;Gana el triple &#34;,&#34;de la apuesta $&#34;&#34; + gana&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;if suma == 6&#34;,&#34;|| suma == 9&#34;,&#34;|| suma == 12&#34;" comment="" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Pierde la apuesta&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;dado1 = math.random()*101&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;mostrar &#34;&#34;Su primer dado es &#34;&#34; + dado1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;dado2 = math.random()*101&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;mostrar &#34;&#34;Su segundo dado es &#34;&#34; + dado2&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;dado3 = math.random()*101&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;mostrar &#34;&#34;Su tercer dado es &#34;&#34; + dado3&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<alternative text="&#34;if dado1==dado2 &#34;,&#34;&amp;&amp; dado1==dado3&#34;" comment="" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;gana = resultado * 2&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+								<instruction text="&#34;mostrar &#34;&#34;Gana el doble &#34;,&#34;de su apuesta $&#34;&#34; + gana&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if dado1==1&#34;,&#34;|| dado2==1&#34;,&#34;|| dado3==1&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;gana = apuesta + 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+										<instruction text="&#34;mostrar &#34;&#34;Gana su apuesta $&#34;&#34; + apuesta + &#34;,&#34;&#34;&#34; más $10. Es decir $&#34;&#34; + gana&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<alternative text="&#34;if dado1==dado2&#34;,&#34;|| dado1==dado3&#34;,&#34;|| dado2==dado3&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+											<qTrue>
+												<instruction text="&#34;mostrar &#34;&#34;Recupera su apuesta de $&#34;&#34;&#34;,&#34;+ apuesta por obtener 2 dados iguales:&#34;&#34;&#34;,&#34; Dado 1: &#34;&#34; + dado1&#34;,&#34;&#34;&#34;Dado 2: &#34;&#34; + dado2&#34;,&#34;&#34;&#34;Dado 3: &#34;&#34; + dado3&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qTrue>
+											<qFalse>
+												<instruction text="&#34;&#34;&#34;Obtuvo 3 dados diferentes en &#34;,&#34;la tercera apuesta y ninguno &#34;,&#34;igual a 1:&#34;,&#34; Dado 1: &#34;&#34; + dado1&#34;,&#34;&#34;&#34;Dado 2: &#34;&#34; + dado2&#34;,&#34;&#34;&#34;Dado 3: &#34;&#34; + dado3&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qFalse>
+										</alternative>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

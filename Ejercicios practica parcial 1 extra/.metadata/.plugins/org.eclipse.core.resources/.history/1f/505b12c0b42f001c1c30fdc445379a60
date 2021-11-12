@@ -1,0 +1,48 @@
+package ej2_parcial_extra;
+
+import javax.swing.JOptionPane;
+
+class Ej2_parcial_extra {
+
+	public static void main(String[] args) {
+		int cumple;
+		
+		cumple = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su año de nacimiento"));
+		
+		if (cumple<1934 || cumple>2005) {
+			JOptionPane.showMessageDialog(null, "Debe ingresar un año\nentre1934 y 2005, usted" +
+																		  "\ningresó " + cumple);
+		} else {
+			if (cumple==1934||cumple==1946||
+				cumple==1958||cumple==1970||
+				cumple==1982||cumple==1994) {
+				JOptionPane.showMessageDialog(null, "Su signo en el\nen el horóscopo chino" +
+				"\nes PERRO");
+			} else {
+				if (cumple==1935||cumple==1947||
+					cumple==1959||cumple==1971||
+					cumple==1983||cumple==1995) {
+					JOptionPane.showMessageDialog(null, "Su signo en el\nen el horóscopo chino" +
+					"\nes CHANCHO");
+				} else {
+					if (cumple==1936||cumple==1948||
+						cumple==1960||cumple==1972||
+						cumple==1984||cumple==1996) {
+							JOptionPane.showMessageDialog(null, "Su signo en el\nen el horóscopo chino" +
+							"\nes RATA");
+						} else {
+							if (cumple==1937||cumple==1949||
+								cumple==1961||cumple==1973||
+								cumple==1985||cumple==1997) {
+								JOptionPane.showMessageDialog(null, "Su signo en el\nen el horóscopo chino" +
+								"\nes CHANCHO");
+							} else {
+
+							}
+						}
+				}
+			}
+		}
+	}
+
+}

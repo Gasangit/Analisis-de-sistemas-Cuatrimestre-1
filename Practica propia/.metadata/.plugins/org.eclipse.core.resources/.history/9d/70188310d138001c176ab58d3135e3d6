@@ -1,0 +1,14 @@
+package arcangelo_functions;
+
+import arcangelo_functions.*;
+
+
+class Arc_main {
+
+	public static void main(String[] args) {
+		
+		Arc_ventana.dib_ventana(Arc_panel1.dib_panel1(),Arc_panel2.dib_panel2());
+
+	
+	}
+}

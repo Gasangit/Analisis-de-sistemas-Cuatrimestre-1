@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" author="GASAN" created="2021-09-18" changedby="GASAN" changed="2021-09-23" origin="Structorizer 3.31-05" text="&#34;aliens&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;mostrar &#34;&#34;Es de noche y se encuentra en su cabaña en el &#34;,&#34;bosque. La emisora en la radio tiene su especial de 10 &#34;,&#34;horas ininterrumpidas de música, desde fuera entra un &#34;,&#34;fuerte resplandor&#34;&#34;;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;Demasiada claridad... sale a ver qué pasa ¡¡¡¡ &#34;,&#34;Es un OVNI !!!! Más que uno, son cientos&#34;&#34;;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;Corre para regresar a la casa. Tiene que calmarse,&#34;,&#34;pensar escapar. No, escapar no. Recuerda que como deber &#34;,&#34;principal &#34;&#34; (más allá de estar de vacaciones) su cargo en&#34;,&#34;la ONU lo obliga pensar en el mundo&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;El problema es que sus contactos también están de&#34;,&#34;vacaciones, celular no funciona y solo cuenta con las &#34;,&#34;postales que le para identificar donde se encuentran. &#34;,&#34;Reconozca los en las postales para pedir ayuda con la &#34;,&#34;vieja radio de onda corta de la cabaña y salvar la &#34;,&#34;Tierra. Necesita 6 de 6&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;Ingresar resp1/“Piense...piense. Rudolf Schneider mencionó&#34;,&#34;que estaría en una ciudad con muchos cafés pequeños&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if resp1 = &#34;&#34;paris&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;El bueno de Rudolf, siempre tan preciso con sus &#34;,&#34;descripciones.&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;contador = contador + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;mostrar &#34;&#34;Parece que vidrio y pirámide no le suenan a nada&#34;,&#34;la próxima piense también en arte&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;ingresar resp2/“¿Por qué Xiang Liu escribe en catalán y &#34;,&#34;habla de sándwiches de tortilla?&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if resp2 = &#34;&#34;barcelona&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;Qué bien vendría un sándwich de tortilla, no es &#34;,&#34;bueno enfrentar amenazas con el estómago vacío.&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;contador = contador + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;mostrar &#34;&#34;Es muy parecida a la basílica de Lujan...&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;ingresar rep3/“A Lungu Mbembe le gusta divertirse... ¿Qué&#34;,&#34;ciudad puede tener todo tan mezclado?”&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if resp3 = &#34;&#34;las vegas&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;Esperemos que gane algo en la ruleta, la contra &#34;,&#34;va a necesitar financiamiento&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;contador = contador + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;mostrar &#34;&#34;'El precio de la historia' ¿Tampoco le suena? &#34;,&#34;Pobre Chumlee.&#34;&#34; &#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;ingresar resp4/ Anabella Rossi dijo algo del desierto. &#34;,&#34;La cuestión es cual...&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if resp4 == &#34;&#34;guiza&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;¿Los camellos comerán extraterrestres?&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;contador = contador + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;mostrar &#34;&#34;Le podría recomendar 'Alienígenas ancestrales', &#34;,&#34;salen estas y otras pirámides&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;ingresar resp5/¿Era un auto viejo el que vio en las fotos&#34;,&#34;de Analía Esquivel? ...&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if resp5 == &#34;&#34;la habana&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;Quizás desde Cuba puedan 'palal' esta invasión&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;contador = contador + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;mostrar &#34;&#34;¿Por qué tiene esa remera del Che puesta?&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;ingresar resp6/&#34;&#34;En Instagram Joao Silva aparecía todas &#34;,&#34;las tardes una taza de té ¿Será una manía? &#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if resp6 == &#34;&#34;londres&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;Dicen que los británicos son aburridos... &#34;,&#34;mientras estén bien armados no habría problema&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;contador = contador + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;mostrar &#34;&#34;Parece que el único reloj que vio en su vida es &#34;,&#34;el que lleva en la muñeca&#34;&#34; &#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;if contador == 0&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;¡¡DERROTA!! Con 0 aciertos nos fue difícil &#34;,&#34;salvar su honor... algunos dicen que es una vergüenza la &#34;,&#34;raza humana. A esta altura su cuerpo debe estar &#34;,&#34;diseccionado en la nave madre&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;if contador == 1&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;¡¡DERROTA!! Tuvo solamente una respuesta &#34;,&#34;correcta, no creemos haya tenido muchas expectativas con &#34;,&#34;salir ileso. Desde aquí abajo lo saludamos mientras &#34;,&#34;asciende por el haz de luz hasta el disco plateado. &#34;,&#34;Esperemos sea un proyecto secreto de los yankis...&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;if contador == 2&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;¡¡DERROTA!! Tuvo dos respuestas correctas por lo&#34;,&#34;que luego de comunicarse con quien pudo localizar, salió&#34;,&#34;corriendo hacia el bosque, donde de repente comenzó a &#34;,&#34;levitar. Al ver el plato metálico tuvo la suerte de &#34;,&#34;desmayarse... le deseamos lo mejor.&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;if contador == 3&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;¡¡DERROTA!! Pudo hablar con tres de sus contactos&#34;,&#34;, pero eso no evitó que una fuerza invisible lo atrajera &#34;,&#34;hacia afuera. Tampoco evito que los tres pequeños seres &#34;,&#34;grises de grandes ojos negros se queden mirando su rostro&#34;,&#34;de terror...&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;if contador == 4&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;¡¡DERROTA!! Luego de poder comunicarse con cuatro&#34;,&#34;de sus allegados termino siendo abducido...no se preocupe,&#34;,&#34;la pérdida de memoria que acompaña estos acontecimientos &#34;,&#34;permitirá que se libre de los malos recuerdos...hasta &#34;,&#34;que aparezcan en sus pesadillas o vuelvan por usted.&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;if contador == 5&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;¡¡DERROTA!! Sus cinco contactos no son suficientes&#34;,&#34;para resolver el problema. Sale corriendo hacia la ruta y&#34;,&#34;queda cegado por un haz de luz...La luz cegadora venia de&#34;,&#34;los faros de un viejo camión que se encontraba parado &#34;,&#34;al borde del asfalto. El amable campesino le ofrece la &#34;,&#34;ayuda que tanto estaba necesitando. Lo que justamente &#34;,&#34;no estaba necesitando es que la radio se volviera loca&#34;,&#34;justo antes de que el camión se apagara y que los tres&#34;,&#34;pequeños humanoides se acerquen caminando desde los &#34;,&#34;arbustos&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;if contador == 6&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;Sus seis decisiones correctas le permitieron al&#34;,&#34;fin estar a salvo. Le habian segado los ojos sí, pero con&#34;,&#34;los faros de una patrulla policial. Sube desesperadamente&#34;,&#34;y puede escapar al fin ¡¡¡Felicitaciones!!! Aunque uno de los &#34;,&#34;dos oficiales mira su rostro y reconoce a quien se fugó de &#34;,&#34;la carcel de la región hace dos días. Bueno, mejor capturado&#34;,&#34;en la tierra que en alguna luna de Saturno&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+	</children>
+</root>

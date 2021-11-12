@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+class Ej4_selector {
+
+	public static void main(String[] args) {
+		String producto, tipo;
+		int cantidad;
+		double costo, valor, descuento;
+		
+		producto = JOptionPane.showInputDialog("Ingrese producto A o B");
+		cantidad = Integer.parseInt(JOptionPane.showInputDialog("Ingresar la cantidad a comprar"));
+		
+		producto = producto.toLowerCase();
+		
+		switch (producto) {
+		case "a":
+		break;
+		case "b":
+		break;	
+
+		default: JOptionPane.showMessageDialog(null, "Solo existen productos de tipo A y B");
+		break;
+		}
+		
+
+	}
+
+}

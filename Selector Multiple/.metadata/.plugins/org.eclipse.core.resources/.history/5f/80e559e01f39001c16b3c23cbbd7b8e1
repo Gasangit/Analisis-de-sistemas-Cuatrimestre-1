@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+
+class Mayusculas {
+
+	public static void main(String[] args) {
+		String cat;
+		
+		cat = JOptionPane.showInputDialog("Ingresar categoría");
+		
+
+	}
+
+}

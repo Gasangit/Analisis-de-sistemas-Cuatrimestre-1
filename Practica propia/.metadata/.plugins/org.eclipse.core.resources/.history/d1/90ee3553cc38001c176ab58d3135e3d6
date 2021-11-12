@@ -1,0 +1,18 @@
+package arcangelo_functions;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+class Arc_main {
+
+	public static void main(String[] args) {
+		JFrame ventana;
+		
+		
+		Arc_ventana.dib_ventana();
+		
+		Arc_panel1.dib_panel1();
+
+	}
+
+}

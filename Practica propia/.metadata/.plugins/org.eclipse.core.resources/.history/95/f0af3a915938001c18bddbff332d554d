@@ -1,0 +1,18 @@
+package prueba_funciones;
+
+import javax.swing.JOptionPane;
+
+class Funcion2 {
+
+	public static void main(String[] args) {
+		int a, b, resultado;
+		
+		a = Integer.parseInt(JOptionPane.showInputDialog("N1"));
+		b = Integer.parseInt(JOptionPane.showInputDialog("N2"));
+		
+		Funcion1 c1 = new Funcion1();
+		c1.sumar(a,b);		
+
+	}
+
+}

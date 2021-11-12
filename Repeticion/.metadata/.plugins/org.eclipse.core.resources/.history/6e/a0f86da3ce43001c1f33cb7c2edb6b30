@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+class Ej3_repeticion_while {
+
+	public static void main(String[] args) {
+		String nombre, tipo, direccion;
+		int reg_inicial, reg_final, kv, gasto, total_kv, total_fac, facturas;
+		
+		nombre = JOptionPane.showInputDialog("Ingrese el nombre del cliente. El proceso se cancela con *");
+		
+		while (nombre.equalsIgnoreCase("*")==false) {
+			tipo = JOptionPane.showInputDialog("Ingrese el tipo de cliente (A, B, C o D)");
+			if (condition) {
+				
+			} else {
+				JOptionPane.showMessageDialog(null, "Debe ingresar una categoría válida");
+			}
+		}
+		
+
+	}
+
+}

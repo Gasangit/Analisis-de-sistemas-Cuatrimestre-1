@@ -1,0 +1,11 @@
+
+class Ej3_repeticion_while {
+
+	public static void main(String[] args) {
+		String nombre, tipo, direccion;
+		int reg_inicial, reg_final, kv, gasto, total_kv, total_fac, facturas;
+		
+
+	}
+
+}

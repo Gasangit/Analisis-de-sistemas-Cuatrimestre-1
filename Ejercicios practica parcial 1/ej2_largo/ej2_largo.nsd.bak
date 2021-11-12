@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="GASAN" created="2021-10-06" changedby="GASAN" changed="2021-10-06" origin="Structorizer 3.32" text="&#34;ej2_largo&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ingresar maria//&#34;&#34;Ingrese los votos obtenidos por MARÍA&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;ingresar juan//&#34;&#34;Ingrese los votos obtenidos por JUAN&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;ingresar pedro//&#34;&#34;Ingrese los votos obtenidos por PEDRO&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mitad = (maria+juan+pedro)/2&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if maria&#62;mitad || &#34;,&#34;juan&#62;mitad || &#34;,&#34;pedro&#62;mitad&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<alternative text="&#34;if maria&#62;mitad&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;MARÍA ha &#34;,&#34;ganado la elección&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if juan&#62;mitad&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;&#34;JUAN ha &#34;,&#34;ganado la elección&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;mostrar &#34;&#34;PEDRO ha &#34;,&#34;ganado la elección&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;if (juan==pedro &amp;&amp; maria&#62;juan)||&#34;,&#34;   (juan==maria &amp;&amp; pedro&#62;juan)||&#34;,&#34;   (pedro==maria &amp;&amp; juan&#62;pedro)||&#34;,&#34;   (maria==juan &amp;&amp; maria==pedro)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<alternative text="&#34;if maria==juan &amp;&amp;&#34;,&#34; maria==pedro&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;&#34;La elección &#34;,&#34;queda anulada por &#34;,&#34;triple empate&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;mostrar &#34;&#34;La elección&#34;,&#34;queda anulada por &#34;,&#34;doble empate en el&#34;,&#34;segundo lugar&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qFalse>
+						</alternative>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if maria&#62;pedro &amp;&amp; &#34;,&#34;juan&#62;pedro&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;balotaje1=&#34;&#34;MARÍA&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+								<instruction text="&#34;balotaje2=&#34;&#34;JUAN&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if maria&#62;juan &amp;&amp; &#34;,&#34;pedro&#62;juan&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;balotaje1=&#34;&#34;MARÍA&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+										<instruction text="&#34;balotaje2=&#34;&#34;PEDRO&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<instruction text="&#34;balotaje1=&#34;&#34;JUAN&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+										<instruction text="&#34;balotaje2=&#34;&#34;PEDRO&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+						<instruction text="&#34;mostrar &#34;&#34;Los candidatos : &#34;&#34; &#34;,&#34;+ balotaje1 + &#34;&#34; y &#34;&#34; +&#34;,&#34;balotaje2 + &#34;&#34; irán a &#34;,&#34;segunda vuelta&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;ingresar votos_cand_1//&#34;,&#34;&#34;&#34;Ingrese los votos de &#34;&#34; &#34;,&#34;+ balotaje1 + &#34;&#34; en la &#34;,&#34;segunda vuelta.&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;ingresar votos_cand_2//&#34;,&#34;&#34;&#34;Ingrese los votos de &#34;&#34;&#34;,&#34;+ balotaje2 + &#34;&#34; en la &#34;,&#34;segunda vuelta&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+						<alternative text="&#34;if votos_cand_1 == &#34;,&#34;votos_cand_2 &#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;&#34;La elección queda&#34;,&#34;anulada por empate en la&#34;,&#34;segunda vuelta&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+								<alternative text="&#34;if votos_cand_1&#62;&#34;,&#34;votos_cand2&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;El ganador/a de la &#34;,&#34;elección es &#34;&#34; + balotaje1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<instruction text="&#34;mostrar &#34;&#34;El ganador/a de la &#34;,&#34;elección es &#34;&#34; + balotaje1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

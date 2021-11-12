@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\GASAN\Desktop\DA VINCI\INTRODUCCION A  LA PROGRAMACION\EJERCITACION JAVA\Ejercicios practica parcial 1\.metadata\.plugins\org.eclipse.jdt.core
+213009528.index
+3373628150.index
+1139216338.index
+2865057740.index
+2603439441.index

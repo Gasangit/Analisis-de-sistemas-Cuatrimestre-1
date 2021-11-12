@@ -1,0 +1,16 @@
+package prueba_funciones;
+
+import javax.swing.JOptionPane;
+
+class Funcion2 {
+
+	public static void main(String[] args) {
+		int resultado;
+		Funcion1 c1 = new Funcion1();
+		
+		c1.sumar();
+		JOptionPane.showMessageDialog(null, c1);
+
+	}
+
+}

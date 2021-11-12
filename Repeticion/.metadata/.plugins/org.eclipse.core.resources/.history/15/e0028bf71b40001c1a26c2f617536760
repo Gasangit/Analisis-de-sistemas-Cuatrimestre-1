@@ -1,0 +1,10 @@
+
+class Ej6_repeticion {
+
+	public static void main(String[] args) {
+		int cant_num, num, num_max, num_min, rango;
+		
+
+	}
+
+}

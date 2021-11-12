@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-02" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="GASAN" created="2021-10-23" changedby="GASAN" changed="2021-10-23" origin="Structorizer 3.32-02" text="&#34;Ej3_selector&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ingresar carrera//&#34;&#34;Ingrese la carrera &#34;,&#34;según el número correspondiente: &#34;,&#34;1-Economía 2-Informática 3-Agronomía &#34;,&#34;4-Contabilidad 5-Química 6-Sistemas&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;ingresar cuat//&#34;&#34;Ingrese &#34;,&#34;la nota del CUATRIMESTRE&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar promedio//&#34;&#34;Ingrese la nota PROMEDIO&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<case text="&#34;carrera&#34;,&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;,&#34;5&#34;,&#34;6&#34;,&#34;default&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qCase>
+				<alternative text="&#34;if cuat&#62;=6 &amp;&amp; &#34;,&#34;promedio &#62; 9.0&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;mostrar &#34;&#34;NO accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qCase>
+			<qCase>
+				<alternative text="&#34;if cuat&#62;6 &amp;&amp; &#34;,&#34;promedio &#62; 9.2&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;mostrar &#34;&#34;NO accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qCase>
+			<qCase>
+				<alternative text="&#34;if cuat&#62;5 &amp;&amp; &#34;,&#34;promedio &#62; 8.8&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;mostrar &#34;&#34;NO accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qCase>
+			<qCase>
+				<alternative text="&#34;if cuat&#62;=6 &amp;&amp; &#34;,&#34;promedio &#62; 9.0&#34;" comment="" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;mostrar &#34;&#34;NO accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qCase>
+			<qCase>
+				<alternative text="&#34;if cuat&#62;5 &amp;&amp; &#34;,&#34;promedio &#62; 8.8&#34;" comment="" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;mostrar &#34;&#34;NO accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qCase>
+			<qCase>
+				<alternative text="&#34;if cuat&#62;6 &amp;&amp; &#34;,&#34;promedio &#62; 9.2&#34;" comment="" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;mostrar &#34;&#34;NO accede &#34;,&#34;a la beca&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;mostrar &#34;&#34;Solo existen &#34;,&#34;6 carreras&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+		</case>
+	</children>
+</root>

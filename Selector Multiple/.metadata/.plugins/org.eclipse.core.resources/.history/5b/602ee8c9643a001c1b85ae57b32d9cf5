@@ -1,0 +1,11 @@
+
+class Ej4_selector {
+
+	public static void main(String[] args) {
+		String producto, tipo;
+		int cantidad;
+		double costo, valor, descuento;
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package prueba_funciones;
+
+
+class Funcion2 {
+
+	public static void main(String[] args) {
+		
+		Funcion1 c1 = new Funcion1();
+		
+		c1.sumar();
+		
+
+	}
+
+}

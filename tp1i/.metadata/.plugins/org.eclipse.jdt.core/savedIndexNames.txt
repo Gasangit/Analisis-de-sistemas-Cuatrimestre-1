@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\GASAN\Desktop\DA VINCI\INTRODUCCION A  LA PROGRAMACION\EJERCITACION JAVA\tp1i\.metadata\.plugins\org.eclipse.jdt.core
+1139216338.index
+3694382563.index
+1214345206.index

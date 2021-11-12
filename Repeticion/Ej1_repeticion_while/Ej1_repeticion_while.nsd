@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-04" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" author="GASAN" created="2021-11-08" changedby="GASAN" changed="2021-11-11" origin="Structorizer 3.32-04" text="&#34;Ej1_repeticion_while&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<repeat text="&#34;do while (nota&#62;=0 &amp;&amp; nota&#60;11)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qRepeat>
+				<instruction text="&#34;ingresar nota//&#34;&#34;Ingrese&#34;,&#34;la nota del alumno&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+				<alternative text="&#34;if nota&#62;4&#34;" comment="" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;aprobado = aprobado + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<alternative text="&#34;if nota&#62;7&#34;" comment="" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;tp = tp + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;escrito = escrito + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qFalse>
+						</alternative>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if nota&#60;0 &#34;,&#34;|| nota&#62;10&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;&#34;Debe ingresar &#34;,&#34;una nota entre 0 y 10&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;desaprobado = desaprobado + 1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qRepeat>
+		</repeat>
+		<instruction text="&#34;mostrar&#34;,&#34;Aprobados&#34;,&#34;Desaprobados&#34;,&#34;TP&#34;,&#34;Escrito&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+	</children>
+</root>

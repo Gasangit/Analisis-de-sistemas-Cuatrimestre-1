@@ -1,0 +1,17 @@
+package ej1;
+
+import javax.swing.JOptionPane;
+
+class Ej1 {
+
+	public static void main(String[] args) {
+		int a,b,c,d,sum,pro;
+		
+		a=iteger.parseint(JOptionPane.showInputDialog("Ingrese número"));
+		b=iteger.parseint(JOptionPane.showInputDialog("Ingrese número"));
+		c=iteger.parseint(JOptionPane.showInputDialog("Ingrese número"));
+		d=iteger.parseint(JOptionPane.showInputDialog("Ingrese número"));
+		
+	}
+
+}

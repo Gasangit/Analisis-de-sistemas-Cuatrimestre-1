@@ -1,0 +1,10 @@
+package prueba_funciones;
+
+class Funcion2 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

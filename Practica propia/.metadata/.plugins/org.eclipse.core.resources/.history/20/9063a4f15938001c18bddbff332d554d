@@ -1,0 +1,15 @@
+package prueba_funciones;
+
+import javax.swing.JOptionPane;
+
+class Funcion1 {
+	public static void main(String[] args) {
+		
+	}
+	void sumar(int n, int n2){
+		// Funcion que recibe 2 enteros y los suma
+		int resultado;
+		resultado = n + n2;
+		JOptionPane.showMessageDialog(null, resultado);
+	}
+}

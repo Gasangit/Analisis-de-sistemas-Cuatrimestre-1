@@ -1,0 +1,20 @@
+package azar;
+
+import javax.swing.JOptionPane;
+
+class Azar {
+
+	public static void main(String[] args) {
+		double a,b,c;
+		
+		
+		a= Math.random();
+		b= Integer.parseInt(Math.random()*10);		
+		c= (int)(Math.random()*5000);
+		
+		
+		
+		JOptionPane.showMessageDialog(null, "Entre 0 y 0.9999: " +a+"\nEntre 0 y 9.9999: "+b+"\nEntre 0 y 4999.9: "+c);
+	}
+
+}

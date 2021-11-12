@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+
+class Craps {
+
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "Tendrá 3 dados para jugar:\n"
+										   +"- Gana el triple de la apuesta si suma 3 o 18.\n"
+				                           +"- Pierde todo su dinero si obtiene 6, 9 o 12.\n"
+				                           +"- Si no suma ninguna de esas cifras tiene segundo\n"
+				                           +"   intento.\n"
+				                           +"- En la segunda vuelta:\n" 
+				                           +"      - Si los 3 dados son iguales gana el doble de la\n" 
+				                           +"        apuesta.\n"
+				                           +"      - Si alguno de los dados es 1 cobra la apuesta\n"
+				                           +"        $10\n"
+				                           +"      - Si obtiene 2 dados iguales recupera la apuesta\n");
+
+	}
+
+}

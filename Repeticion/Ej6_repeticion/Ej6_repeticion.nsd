@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-04" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="GASAN" created="2021-11-07" changedby="GASAN" changed="2021-11-07" origin="Structorizer 3.32-04" text="&#34;Ej6_repeticion&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ingresar cant_num//&#34;&#34;Ingrese&#34;,&#34;la cantidad de números&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<for text="&#34;for n &#60;- 1 to x&#34;" comment="&#34;&#34;" counterVar="n" startValue="1" endValue="x" stepConst="1" style="COUNTER" color="ffffff" disabled="0">
+			<qFor>
+				<instruction text="&#34;ingresar num//&#34;&#34;Ingrese&#34;,&#34;número&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<alternative text="&#34;if n==1&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;num_max = num&#34;,&#34;num_min = num&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if num&#62;num_max&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;num_max = num&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if num&#60;num_min&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;num_min= num&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse color="ffffff">
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFor>
+		</for>
+		<instruction text="&#34;rango = num_max - num_min&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;mostrar &#34;&#34;El rango es : &#34;&#34; + rango&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+	</children>
+</root>

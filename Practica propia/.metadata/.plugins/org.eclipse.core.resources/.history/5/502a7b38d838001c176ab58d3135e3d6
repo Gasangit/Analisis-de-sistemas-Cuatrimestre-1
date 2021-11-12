@@ -1,0 +1,13 @@
+package arcangelo_functions;
+
+javax.swing.JButton;
+
+class Arc_Button2_p1 {
+
+	public static JButton button2_p2() {
+		
+		
+		return button1;
+	}
+
+}

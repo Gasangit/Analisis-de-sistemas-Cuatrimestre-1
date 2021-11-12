@@ -1,0 +1,27 @@
+package ej2_parcial_extra;
+
+import javax.swing.JOptionPane;
+
+class Ej2_parcial_extra {
+
+	public static void main(String[] args) {
+		int cumple;
+		
+		cumple = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su año de nacimiento"));
+		
+		if (cumple<1934 || cumple>2005) {
+			JOptionPane.showMessageDialog(null, "Debe ingresar un año\nentre1934 y 2005, usted" +
+																		  "\ningresó " + cumple);
+		} else {
+			if (cumple==1934||cumple==1946||
+				cumple==1958||cumple==1970||
+				cumple==1982||cumple==1994) {
+				JOptionPane.showMessageDialog(null, "Su signo en el\nen el horóscopo chino" +
+																				"\nes PERRO");
+			} else {
+
+			}
+		}
+	}
+
+}

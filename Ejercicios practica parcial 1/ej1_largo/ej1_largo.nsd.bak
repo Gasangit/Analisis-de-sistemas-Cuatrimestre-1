@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" author="GASAN" created="2021-10-04" changedby="GASAN" changed="2021-10-06" origin="Structorizer 3.32" text="&#34;ej1_largo&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ingresar dia//&#34;&#34;Ingrese el día de su nacimiento (en números)&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;ingrese mes//&#34;&#34;Ingrese el mes de su nacimiento (en números)&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if dia&#60;=29&amp;&amp;mes=2&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<alternative text="&#34;if dia&#62;=1 &amp;&amp; dia&#60;=18&#34;" comment="" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;mostrar &#34;&#34;Usted es de ACUARIO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;mostrar &#34;&#34;Usted es de PISCIS&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qTrue>
+			<qFalse>
+				<alternative text="&#34;if dia&#62;=1&amp;&amp;dia&#60;=31&amp;&amp;(mes==1||mes==3||mes==5||mes==7||&#34;,&#34;mes==8||mes==10||mes==12)&#34;" comment="" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<alternative text="&#34;if mes==1 &amp;&amp; dia&#62;=1 &amp;&amp; dia&#60;=20&#34;" comment="" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;mostrar &#34;&#34;Usted es de CAPRICORNIO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if mes==1&amp;&amp;dia&#62;=21&#34;" comment="" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;Usted es de ACUARIO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<alternative text="&#34;if mes==3&amp;&amp;dia&#60;=20&#34;" comment="" color="ffffff" disabled="0">
+											<qTrue>
+												<instruction text="&#34;mostrar &#34;&#34;Usted es de PISCIS&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qTrue>
+											<qFalse>
+												<alternative text="&#34;if (mes==3&amp;&amp;dia=&#62;21)&#34;" comment="" color="ffffff" disabled="0">
+													<qTrue>
+														<instruction text="&#34;mostrar &#34;&#34;Usted es de ARIES&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+													</qTrue>
+													<qFalse>
+														<alternative text="&#34;if mes==5 &amp;&amp; dia&#60;=21&#34;" comment="" color="ffffff" disabled="0">
+															<qTrue>
+																<instruction text="&#34;mostrar &#34;&#34;Usted es de TAURO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+															</qTrue>
+															<qFalse>
+																<alternative text="&#34;if mes==5 &amp;&amp; dia&#62;=22&#34;" comment="" color="ffffff" disabled="0">
+																	<qTrue>
+																		<instruction text="&#34;mostrar &#34;&#34;Usted es de GEMINIS&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																	</qTrue>
+																	<qFalse>
+																		<instruction text="" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																		<alternative text="&#34;if mes==7 &amp;&amp; dia&#60;=22&#34;" comment="" color="ffffff" disabled="0">
+																			<qTrue>
+																				<instruction text="&#34;mostrar &#34;&#34;Usted es de CANCER&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																			</qTrue>
+																			<qFalse>
+																				<alternative text="&#34;if (mes==7 &amp;&amp; dia&#62;=23)||(mes==8 &amp;&amp; dia&#60;=23)&#34;" comment="" color="ffffff" disabled="0">
+																					<qTrue>
+																						<instruction text="&#34;mostrar &#34;&#34;Usted es de LEO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																					</qTrue>
+																					<qFalse>
+																						<alternative text="&#34;if mes==8 &amp;&amp; dia&#62;=24&#34;" comment="" color="ffffff" disabled="0">
+																							<qTrue>
+																								<instruction text="&#34;mostrar &#34;&#34;Usted es de VIRGO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																							</qTrue>
+																							<qFalse>
+																								<alternative text="&#34;if mes==10 &amp;&amp; dia&#60;=23&#34;" comment="" color="ffffff" disabled="0">
+																									<qTrue>
+																										<instruction text="&#34;mostrar &#34;&#34;Usted es de LIBRA&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																									</qTrue>
+																									<qFalse>
+																										<alternative text="&#34;if mes==10 &amp;&amp; dia&#62;=24&#34;" comment="" color="ffffff" disabled="0">
+																											<qTrue>
+																												<instruction text="&#34;mostrar &#34;&#34;Usted es de ESCORPIO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																											</qTrue>
+																											<qFalse>
+																												<alternative text="&#34;if mes==12 &amp;&amp; dia&#60;=21&#34;" comment="" color="ffffff" disabled="0">
+																													<qTrue>
+																														<instruction text="&#34;mostrar &#34;&#34;Usted es de Sagitario&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																													</qTrue>
+																													<qFalse>
+																														<instruction text="&#34;mostrar &#34;&#34;Usted es de CAPRICORNIO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+																													</qFalse>
+																												</alternative>
+																											</qFalse>
+																										</alternative>
+																									</qFalse>
+																								</alternative>
+																							</qFalse>
+																						</alternative>
+																					</qFalse>
+																				</alternative>
+																			</qFalse>
+																		</alternative>
+																	</qFalse>
+																</alternative>
+															</qFalse>
+														</alternative>
+													</qFalse>
+												</alternative>
+											</qFalse>
+										</alternative>
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+					</qTrue>
+					<qFalse>
+						<alternative text="&#34;if dia&#62;=1&amp;&amp;dia&#60;=30 &amp;&amp; (mes==4||mes==6||mes==9||mes==11)&#34;" comment="" color="ffffff" disabled="0">
+							<qTrue>
+								<alternative text="&#34;if mes==4 &amp;&amp; dia&#60;=20&#34;" comment="" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;mostrar &#34;&#34;Usted es de ARIES&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse>
+										<alternative text="&#34;if mes==4 &amp;&amp; dia&#62;=21&#34;" comment="" color="ffffff" disabled="0">
+											<qTrue>
+												<instruction text="&#34;mostrar &#34;&#34;Usted es de TAURO&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+											</qTrue>
+											<qFalse>
+												<alternative text="&#34;if mes==6 &amp;&amp; dia&#60;=21&#34;" comment="" color="ffffff" disabled="0">
+													<qTrue>
+														<instruction text="&#34;mostrar &#34;&#34;Usted es de GEMINIS&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+													</qTrue>
+													<qFalse>
+														<alternative text="&#34;if mes==6 &amp;&amp; dia&#62;=22&#34;" comment="" color="ffffff" disabled="0">
+															<qTrue>
+																<instruction text="&#34;mostrar &#34;&#34;Usted es de CANCER&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+															</qTrue>
+															<qFalse>
+																<alternative text="&#34;if mes==9 &amp;&amp; dia&#60;=23&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																	<qTrue>
+																		<instruction text="&#34;mostrar &#34;&#34;Usted es de VIRGO&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+																	</qTrue>
+																	<qFalse>
+																		<alternative text="&#34;if mes==9 &amp;&amp; dia&#62;=24&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																			<qTrue>
+																				<instruction text="&#34;mostrar &#34;&#34;Usted es de LIBRA&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+																			</qTrue>
+																			<qFalse>
+																				<alternative text="&#34;if mes==11 &amp;&amp; dia&#60;=22&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+																					<qTrue>
+																						<instruction text="&#34;mostrar &#34;&#34;Usted es de ESCORPIO&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+																					</qTrue>
+																					<qFalse>
+																						<instruction text="&#34;mostrar &#34;&#34;Usted es de SAGITARIO&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+																					</qFalse>
+																				</alternative>
+																			</qFalse>
+																		</alternative>
+																	</qFalse>
+																</alternative>
+															</qFalse>
+														</alternative>
+													</qFalse>
+												</alternative>
+											</qFalse>
+										</alternative>
+									</qFalse>
+								</alternative>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;mostrar &#34;&#34;El mes que ingresó no tiene la cantidad de días&#34;,&#34;descriptos&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qFalse>
+						</alternative>
+					</qFalse>
+				</alternative>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

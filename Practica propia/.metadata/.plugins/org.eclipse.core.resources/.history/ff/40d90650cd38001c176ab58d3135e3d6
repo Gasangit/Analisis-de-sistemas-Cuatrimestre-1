@@ -1,0 +1,13 @@
+package arcangelo_functions;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+class Arc_panel2 {
+
+	public static JPanel dib_panel2(JFrame ventana) {
+		
+
+	}
+
+}

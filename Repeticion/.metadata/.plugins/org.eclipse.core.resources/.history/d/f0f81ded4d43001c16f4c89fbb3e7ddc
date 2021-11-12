@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+class Ej1_repeticion_while {
+
+	public static void main(String[] args) {
+		
+		int nota, aprobado=0, desaprobado=0, tp=0, escrito=0;
+
+		do {
+			nota = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota del alumno, corta el "
+																+ "\nbucle con una nota negativa (-1)"));
+			if (nota==4) {
+				aprobado = aprobado + 1;
+				if (nota>7) {
+					tp = tp + 1;
+				} else {
+					escrito = escrito + 1;
+				}
+			} else {
+				desaprobado = desaprobado + 1;
+			}
+		} while (nota<0);
+	}
+
+}

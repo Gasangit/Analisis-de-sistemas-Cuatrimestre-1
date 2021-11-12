@@ -1,0 +1,11 @@
+package ej3_parcial_extra;
+
+class Ej3_parcial_extra {
+
+	public static void main(String[] args) {
+		Double nivel;
+		int edad, unidad, sexo;
+
+	}
+
+}

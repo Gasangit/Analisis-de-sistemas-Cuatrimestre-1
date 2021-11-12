@@ -1,0 +1,20 @@
+package ej2_parcial_extra;
+
+import javax.swing.JOptionPane;
+
+class Ej2_parcial_extra {
+
+	public static void main(String[] args) {
+		int cumple;
+		
+		cumple = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su año de nacimiento"));
+		
+		if (cumple<1934 || cumple>2005) {
+			JOptionPane.showMessageDialog(null, "Debe ingresar un año\nentre1934 y 2005, usted" +
+																		  "\ningresó " + cumple);
+		} else {
+
+		}
+	}
+
+}

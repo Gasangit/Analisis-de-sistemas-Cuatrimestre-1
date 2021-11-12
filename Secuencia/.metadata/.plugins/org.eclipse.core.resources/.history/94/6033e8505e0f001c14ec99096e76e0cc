@@ -1,0 +1,14 @@
+package ejextra1;
+
+import javax.swing.JOptionPane;
+
+class Ejextra1 {
+
+	public static void main(String[] args) {
+		double vh,ch,sv,os,sn;
+		
+		vh = Double.parseDouble(JOptionPane.showInputDialog("Ingrese valor hora"));
+		ch = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la cantidad de horas"));
+	}
+
+}

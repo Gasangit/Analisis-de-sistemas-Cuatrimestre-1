@@ -1,0 +1,14 @@
+package sumar;
+import javax.swing.*;
+
+class Sumar {
+
+	public static void main(String[] args) {
+		String nom;
+		JOptionPane.showMessageDialog(null, "Hola mundo");
+
+		nom = JOptionPane.showInputDialog("Ingresar nombre");
+		JOptionPane.showMessageDialog(null, "Bienvenido a Java " + nom);
+	}
+
+}

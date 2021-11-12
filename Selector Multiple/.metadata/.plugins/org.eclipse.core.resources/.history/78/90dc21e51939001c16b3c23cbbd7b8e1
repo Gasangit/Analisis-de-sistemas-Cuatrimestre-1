@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+class Ej2B_selector {
+
+	public static void main(String[] args) {
+		double ph,phe,ch,che,s;
+		int cat;
+		boolean error = false;
+		
+		ch = Double.parseDouble(JOptionPane.showInputDialog("Ingrese cantidad de horas"));
+		ch = Double.parseDouble(JOptionPane.showInputDialog("Ingrese cantidad de horas extra"));
+		ch = Integer.parseInt(JOptionPane.showInputDialog("Ingrese categoría 1, 2 o 3"));
+	}
+
+}

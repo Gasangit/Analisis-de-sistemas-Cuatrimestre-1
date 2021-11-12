@@ -1,0 +1,15 @@
+package arcangelo_functions;
+
+import javax.swing.JButton;
+
+class Button1_p1 {
+
+	public static JButton button1_p1() {
+		JButton button1 = new JButton();
+			
+		
+		
+		return button1;
+	}
+
+}

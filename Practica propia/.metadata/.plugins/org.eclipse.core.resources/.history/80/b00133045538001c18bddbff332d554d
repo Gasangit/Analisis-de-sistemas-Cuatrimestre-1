@@ -1,0 +1,14 @@
+package prueba_funciones;
+
+import javax.swing.JOptionPane;
+
+class Funcion1 {
+
+	public static void main(String[] args) {
+		int n;
+		
+		sumar(){n = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número entero"));	
+
+	}
+
+}

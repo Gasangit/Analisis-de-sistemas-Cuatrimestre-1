@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+C:\Users\GASAN\Desktop\Ejercitación JAVA\Secuencia\.metadata\.plugins\org.eclipse.jdt.core
+3375120623.index
+3391750006.index
+3460400374.index
+1394650828.index
+3108418656.index
+3190517881.index
+542107098.index
+1344606549.index
+1502829950.index
+2868883739.index
+606576218.index
