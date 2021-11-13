@@ -21,7 +21,7 @@ class Ej3_repeticion_while {
 				reg_final = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el último registro del medidor"));
 				kv = reg_final - reg_inicial;
 				
-				if (tipo.equalsIgnoreCase("a")||tipo.equalsIgnoreCase("b")) {
+				if (tipo.equalsIgnoreCase("a")||tipo.equalsIgnoreCase("c")) {
 					if (kv<=140) {
 						gasto = kv*3.2;
 					} else {

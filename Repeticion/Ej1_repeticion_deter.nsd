@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-04" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="GASAN" created="2021-11-13" changedby="GASAN" changed="2021-11-13" origin="Structorizer 3.32-04" text="&#34;Ej1_repeticion_deter&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ingresar tipo//&#34;,&#34;&#34;&#34;Si desea ingresar&#34;,&#34;una venta informe el&#34;,&#34;tipo (1 o 2):&#34;,&#34;1 - Contado&#34;,&#34;2 - Tarjeta&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+		<case text="&#34;tipo&#34;,&#34;1 - 2&#34;,&#34;default&#34;" comment="" color="ffffff" disabled="0">
+			<qCase>
+				<while text="&#34;while (tipo==1||tipo==2)&#34;" comment="" color="ffffff" disabled="0">
+					<qWhile>
+						<instruction text="&#34;ingresar monto//&#34;,&#34;&#34;&#34;Indique el monto&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+						<alternative text="&#34;if tipo==1&#34;" comment="" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;cant_contado+=1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+								<instruction text="&#34;total_contado+=monto&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;cant_tarjeta+=1&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+								<instruction text="&#34;total_tarjeta+=monto&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qFalse>
+						</alternative>
+						<alternative text="&#34;if cant_contado+cant_tarjeta==1&#34;" comment="" color="ffffff" disabled="0">
+							<qTrue>
+								<instruction text="&#34;venta_max=monto&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+								<instruction text="&#34;ingresar vend_max//&#34;&#34;Realizó la &#34;,&#34;mayor venta, ingrese su nombre&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<alternative text="&#34;if monto&#62;venta_max&#34;" comment="" color="ffffff" disabled="0">
+									<qTrue>
+										<instruction text="&#34;venta_max=monto&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+										<instruction text="&#34;ingresar vend_max//&#34;&#34;Realizó la &#34;,&#34;mayor venta, ingrese su nombre&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+									</qTrue>
+									<qFalse color="ffffff">
+									</qFalse>
+								</alternative>
+							</qFalse>
+						</alternative>
+						<instruction text="&#34;ingresar tipo//&#34;,&#34;&#34;&#34;Si desea ingresar&#34;,&#34;una venta informe el&#34;,&#34;tipo (1 o 2, cualquier &#34;,&#34;otro número terminara &#34;,&#34;el proceso):&#34;,&#34;1 - Contado&#34;,&#34;2 - Tarjeta&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qWhile>
+				</while>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;error = true&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+		</case>
+		<alternative text="&#34;if error==true&#34;" comment="" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;mostrar &#34;&#34;Ingreso un tipo &#34;,&#34;de venta incorrecto&#34;&#34;&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;monto_total = total_contado + total_tarjeta&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;mostrar &#34;,&#34;&#34;&#34;Cant. ventas tarjeta: &#34;&#34; + cant_tarjeta&#34;,&#34;&#34;&#34;Total de efectivo: &#34;&#34; + total_contado&#34;,&#34;&#34;&#34;Monto total tarjeta: &#34;&#34; + total_tarjeta&#34;,&#34;&#34;&#34;Monto total: &#34;&#34; + monto_total&#34;,&#34;&#34;&#34;Venta máxima: &#34;&#34; + venta_max&#34;,&#34;&#34;&#34;Vendedor venta máxima: &#34;&#34; + vend_max&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+	</children>
+</root>
