@@ -12,7 +12,6 @@ class Ej1_array {
 			num[i] = Integer.parseInt(JOptionPane.showInputDialog("Número: "+ i +
 													" Ingrese 8 entre 0 y 100"));
 		}
-		
 		for (int i = 0; i < num.length; i++) {
 			System.out.println(num[i]);
 			tot = tot + num[i];
@@ -23,11 +22,8 @@ class Ej1_array {
 					max_50 = max_50 + 1;
 				}
 			}
-			
 		}
 		
-		JOptionPane.showMessageDialog(null, "Igual a 36: " + treinta_6 + "\nMayor a 50: " + max_50);
-		
+		JOptionPane.showMessageDialog(null, "Igual a 36: " + treinta_6 + "\nMayor a 50: " + max_50);	
 	}
-
 }

@@ -27,9 +27,11 @@
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\GASAN\Desktop\DA VINCI\INTRODUCCION A  LA PROGRAMACION\EJERCITACION JAVA\Repeticion"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
-		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Ej2_repeticion_while - Ej2_repeticion_while"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="Ej2_repeticion_while\Ej2_repeticion_while.jar"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Tp2_juego - Tp2_juego"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="Tp2_juego\Tp2_juego.jar"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="Tp2_juego\Tp2_juego.jar"/>
+			<item value="Tp2_juego/Tp2_juego.jar"/>
 			<item value="Ej2_repeticion_while/Ej2_repeticion_while.jar"/>
 			<item value="Ej1_repeticion_while/Ej1_repeticion_while.jar"/>
 			<item value="Ej5_repeticion/Ej5_repeticion.jar"/>
